@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Opinions from a Pittsburgher.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Design by Eric Schulte, source at https://github.com/eschulte/pghopinions. -->
+    <link rel="stylesheet" href="{{ "/w3.css" |url }}">
+    <!-- <link rel="icon" href="{{ "/favicon.ico" |url }}"> -->
+  </head>
+<body>
+  <a href="{{ "/" | url }}" class="w3-bar-item w3-button w3-wide" onclick="navbar_hide()">Home</a>
+  <div class="w3-container">
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+  </div>
+</body>
+</html>
